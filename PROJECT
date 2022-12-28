@@ -1,0 +1,6 @@
+domain: example.com
+layout:
+- go.kubebuilder.io/v3
+projectName: operator-demo
+repo: github.com/jaybarbhaiya/operator-demo
+version: "3"

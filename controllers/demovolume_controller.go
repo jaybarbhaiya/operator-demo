@@ -88,7 +88,7 @@ func (r *DemoVolumeReconciler) reconcilePVC(ctx context.Context, volume *demov1.
 
 	l.Info("PVC not Found")
 
-	storageClass := "civo-volume"
+	storageClass := "test-volume"
 	storageRequest, _ := resource.ParseQuantity(fmt.Sprintf("%dGi", volume.Spec.Size))
 
 	pvc = &v1.PersistentVolumeClaim{

@@ -1,0 +1,13 @@
+apiVersion: demo.example.com/v1
+kind: DemoVolume
+metadata:
+  labels:
+    app.kubernetes.io/name: demovolume
+    app.kubernetes.io/instance: demovolume-sample
+    app.kubernetes.io/part-of: operator-demo
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/created-by: operator-demo
+  name: demovolume-sample
+spec:
+  name: demo
+  size: 10

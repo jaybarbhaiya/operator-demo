@@ -3,4 +3,14 @@ layout:
 - go.kubebuilder.io/v3
 projectName: operator-demo
 repo: github.com/jaybarbhaiya/operator-demo
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: example.com
+  group: demo
+  kind: DemoVolume
+  path: github.com/jaybarbhaiya/operator-demo/api/v1
+  version: v1
 version: "3"
